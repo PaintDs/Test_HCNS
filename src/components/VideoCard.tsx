@@ -247,7 +247,7 @@ export default function VideoCard({ video, isActive }: VideoCardProps) {
               </svg>
             </button>
             <span className="text-white text-xs font-semibold mt-1 drop-shadow select-none">
-              248
+              0
             </span>
           </div>
 
@@ -270,7 +270,7 @@ export default function VideoCard({ video, isActive }: VideoCardProps) {
               </svg>
             </button>
             <span className="text-white text-xs font-semibold mt-1 drop-shadow select-none">
-              43
+              0
             </span>
           </div>
         </div>
