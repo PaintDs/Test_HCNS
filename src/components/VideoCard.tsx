@@ -182,21 +182,24 @@ export default function VideoCard({ video, isActive }: VideoCardProps) {
           )}
         </button>
 
-        {/* Text Details (Bottom Left overlay) */}
-        <div className="absolute bottom-0 left-0 right-16 p-4 z-10 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
-          <h3 className="font-bold text-base md:text-lg mb-1.5 flex items-center gap-2">
-            <span className="w-7 h-7 rounded-full bg-zinc-800 flex items-center justify-center text-xs font-bold text-zinc-100 border border-zinc-600">
+        {/* Bottom Shadow Overlay */}
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black/60 to-transparent pointer-events-none z-[5]" />
+
+        {/* Text Details (Bottom Left - TikTok Style) */}
+        <div className="absolute bottom-4 left-4 z-10 max-w-[70%]">
+          <h3 className="font-bold text-base mb-1.5 flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-zinc-800 flex items-center justify-center text-xs font-bold text-zinc-100 border border-zinc-600 shrink-0">
               {video.authorName.charAt(0).toUpperCase()}
             </span>
             @{video.authorName}
           </h3>
-          <p className="text-xs md:text-sm text-zinc-200 line-clamp-3 leading-relaxed drop-shadow">
+          <p className="text-xs text-zinc-200 line-clamp-2 leading-relaxed drop-shadow">
             {video.description}
           </p>
         </div>
 
-        {/* Floating Controls Bar (Right) */}
-        <div className="absolute right-3 top-1/2 -translate-y-1/2 flex flex-col gap-5 items-center z-20">
+        {/* Floating Controls Bar (Right - TikTok Style) */}
+        <div className="absolute right-3 bottom-20 z-10 flex flex-col items-center gap-5">
           
           {/* Like Heart */}
           <div className="flex flex-col items-center">
