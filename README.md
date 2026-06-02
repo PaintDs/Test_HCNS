@@ -2,19 +2,7 @@
 
 Dự án hoàn thiện theo các tiêu chí kiểm tra đầu vào, giả lập giao diện cuộn dọc video ngắn tối ưu hiệu năng.
 
----
-
-## 🔗 Thông Tin Triển Khai (Submission Links)
-
-- **Link Source Code (GitHub):** `https://github.com/PaintDs/Test_HCNS`
-- **Link Dự án Production (Vercel):** `https://test-nguyenvankhai-xxx.vercel.app` *(thay `xxx` bằng 3 số cuối số điện thoại)*
-- **Link Video Demo (Google Drive):** `[DÁN_LINK_VIDEO_DEMO_ĐÃ_MỞ_QUYỀN_TRUY_CẬP_VÀO_ĐÂY]`
-
----
-
 ## 🧠 Giải Pháp Kiến Trúc & Xử Lý Logic Play/Pause Khi Cuộn Trang
-
-*(Đây là phần bắt buộc giải thích ngắn gọn theo yêu cầu của đề bài)*
 
 - **Cơ chế xử lý chính:** Thay vì gắn cho mỗi thẻ video một `IntersectionObserver` độc lập gây tốn tài nguyên phần cứng, ứng dụng áp dụng giải pháp **Single Observer Pattern** tập trung tại Component cha (`VideoFeed.tsx`).
 
