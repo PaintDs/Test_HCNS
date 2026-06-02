@@ -100,7 +100,7 @@ export default function VideoCard({ video, isActive }: VideoCardProps) {
   };
 
   return (
-    <div className="snap-start w-full h-screen relative flex items-center justify-center bg-black overflow-hidden select-none">
+    <div className="snap-start w-full h-[100dvh] relative flex items-center justify-center bg-black overflow-hidden select-none">
       {/* Aspect Ratio Frame */}
       <div className="w-full h-full max-w-[450px] aspect-[9/16] relative bg-zinc-950 flex items-center justify-center">
         
@@ -196,7 +196,7 @@ export default function VideoCard({ video, isActive }: VideoCardProps) {
         </div>
 
         {/* Floating Controls Bar (Right) */}
-        <div className="absolute right-3 bottom-12 flex flex-col gap-5 items-center z-20">
+        <div className="absolute right-3 top-1/2 -translate-y-1/2 flex flex-col gap-5 items-center z-20">
           
           {/* Like Heart */}
           <div className="flex flex-col items-center">

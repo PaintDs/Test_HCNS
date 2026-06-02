@@ -41,13 +41,13 @@ export default function VideoFeed() {
   return (
     <div
       ref={feedRef}
-      className="w-full h-screen overflow-y-scroll snap-y snap-mandatory bg-black scroll-smooth"
+      className="w-full h-[100dvh] overflow-y-scroll snap-y snap-mandatory bg-black scroll-smooth"
     >
       {mockVideos.map((video) => (
         <div
           key={video.id}
           data-video-id={video.id}
-          className="w-full h-screen snap-start"
+          className="w-full h-[100dvh] snap-start"
         >
           <VideoCard video={video} isActive={activeVideoId === video.id} />
         </div>
